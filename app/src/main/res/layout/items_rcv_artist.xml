@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="8dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp">
+
+    <ImageView
+        android:id="@+id/imv_artist_avt"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="#B5A0A0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_artist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/imv_artist_avt"
+        app:layout_constraintTop_toTopOf="@+id/imv_artist_avt" />
+
+    <TextView
+        android:id="@+id/tv_artist_albums"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imv_artist_avt"
+        app:layout_constraintStart_toStartOf="@+id/tv_artist_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_artist_name" />
+
+    <TextView
+        android:id="@+id/tv_artist_songs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_artist_albums"
+        app:layout_constraintStart_toEndOf="@+id/tv_artist_albums"
+        app:layout_constraintTop_toTopOf="@+id/tv_artist_albums" />
+</androidx.constraintlayout.widget.ConstraintLayout>
